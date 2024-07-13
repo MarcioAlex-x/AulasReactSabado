@@ -1,20 +1,18 @@
-import Botao from "./Botao"
-import Header from "./Header"
 
+import Dados from './components/Dados'
+import Principal from './pages/Principal'
 
 const App = () =>{
-  const nome = 'turma'
-  const diaSemana = 'sábado'
-  const n1 = 12
-  const n2 = 6
-  return(
-    <> {/* Fragment */}
-      <Header />      
-      <Botao />
-    </>
-      
-    
-  )
+    // javascript
+    const nome = 'Alex'
+    const profissao = 'Programador'
+    const idade = 41
+    return(
+        <>
+        <Principal nome={nome} sala="Sala-12" />
+        <Dados x = {nome} y = {profissao} z={idade}/>
+        </>
+    )
 }
 
 export default App
